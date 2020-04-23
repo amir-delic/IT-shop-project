@@ -1,0 +1,22 @@
+.SignIn {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.SignIn input {
+  background-color: #f8f8ff;
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 1px solid #6d7885;
+  outline: none;
+}
+.SignIn button {
+  width: 50%;
+  border-radius: 0;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,27 @@
+.table-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.tr td {
+  padding-top: 6%;
+  font-size: 1.4rem;
+}
+.fas {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.fa-arrow-up:hover {
+  transform: rotate(90deg);
+  color: lime;
+  transition: all 0.5s ease;
+}
+.fa-arrow-down:hover {
+  transform: rotate(90deg);
+  color: red;
+  transition: all 0.5s ease;
+}
+.fa-trash-alt:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,10 @@
+.container h1 {
+  margin-bottom: 3%;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+a:link {
+  text-decoration: none;
+}

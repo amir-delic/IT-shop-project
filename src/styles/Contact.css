@@ -1,0 +1,37 @@
+.Contact {
+  text-align: center;
+}
+.Contact .fas {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+.Contact .fas:hover {
+  transform: rotate(720deg);
+  color: #156bff;
+  transition: all 2s ease;
+}
+.Contact h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.Contact h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.Contact .card {
+  height: 350px;
+  padding: 2rem;
+}
+.Contact .card:hover {
+  transform: none;
+  transition: none;
+  cursor: auto;
+}
+.jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1493146146946-e907f69cdf23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80");
+  background-size: cover;
+  height: 100%;
+  color: white;
+  object-fit: cover;
+}

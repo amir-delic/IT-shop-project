@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import uuid from "uuid/v4";
 import "../styles/SignUp.css";
 
 class SignUp extends Component {
@@ -13,7 +14,19 @@ class SignUp extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    const newUser = { ...this.state, id: uuid() };
+    if (this.state.password === this.state.confirmPassword) {
+      this.props.signUpUser(newUser);
+    } else {
+      alert("Password do not match!!!");
+    }
+
+    this.setState({
+      displayName: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+    });
   };
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });

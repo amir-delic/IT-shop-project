@@ -9,6 +9,7 @@ import MyCart from "./pages/MyCart";
 import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Modal from "./components/Modal";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path="/404" component={PageNotFound} />
           <Redirect to="/404" />
         </Switch>
+        <Modal />
         <Footer />
       </div>
     );

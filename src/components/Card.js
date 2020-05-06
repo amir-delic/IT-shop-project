@@ -10,7 +10,10 @@ class Card extends Component {
       <div className="col mb-4">
         <ProductConsumer>
           {(value) => (
-            <div className="card" onClick={() => value.handleShop(id)}>
+            <div
+              className="card"
+              onClick={() => value.handleShop(this.props.product)}
+            >
               <Link to="/shop">
                 <img className="card-img-top" src={img} alt={title} />
                 <div className="card-body">

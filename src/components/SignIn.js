@@ -11,7 +11,12 @@ class SignIn extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    const newUser = { ...this.state };
+    this.props.signInUser(newUser);
+    this.setState({
+      email: "",
+      password: "",
+    });
   };
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });

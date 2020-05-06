@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Product from "../components/Product";
 import "../styles/MyCart.css";
 import { ProductConsumer } from "../context";
+import { Link } from "react-router-dom";
 
 class MyCart extends Component {
   render() {
@@ -22,8 +23,9 @@ class MyCart extends Component {
                   <tr>
                     <th scope="col">Product</th>
                     <th scope="col">Description</th>
-                    <th scope="col">Quantity</th>
                     <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Item Total</th>
                     <th scope="col">Remove</th>
                   </tr>
                 </thead>
@@ -38,8 +40,30 @@ class MyCart extends Component {
                         decreaseNumProduct={value.decreaseNumProduct}
                       />
                     ))}
+                    {value.cart.length > 0 && (
+                      <tr>
+                        <th>
+                          <Link to="/">
+                            <button
+                              style={{ width: "150px", borderRadius: "0" }}
+                              className="btn btn-dark"
+                              onClick={() => value.clearCart()}
+                            >
+                              Clear Cart
+                            </button>
+                          </Link>
+                        </th>
+                      </tr>
+                    )}
+
                     <tr>
-                      <th>Total: {value.total}.00$</th>
+                      <th>SUBTOTAL: {value.cartSubTotal}.00$</th>
+                    </tr>
+                    <tr>
+                      <th>TAX: {value.cartTax}$</th>
+                    </tr>
+                    <tr>
+                      <th>TOTAL: {value.cartTotal}$</th>
                     </tr>
                   </React.Fragment>
                 </tbody>

@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 200px;
+}
+#modal h2 {
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 5px;
+}
+#modal img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+#modal h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+#modal button {
+  width: 300px;
+  margin-bottom: 3px;
+}

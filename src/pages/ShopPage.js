@@ -21,6 +21,7 @@ class ShopPage extends Component {
                       item={item}
                       addToCart={value.addToCart}
                       handleInCart={value.handleInCart}
+                      openModal={value.openModal}
                     />
                   ))}
                 </div>
